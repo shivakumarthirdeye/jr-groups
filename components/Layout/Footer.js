@@ -140,7 +140,10 @@ const Footer = () => {
           {footerIcons.map(item => {
             const { href, icon, id } = item;
             return (
-              <li className='text-xl p- h-8 w-8 bg-black bg-opacity-50 flex items-center justify-center rounded-full'>
+              <li
+                key={id}
+                className='text-xl p- h-8 w-8 bg-black bg-opacity-50 flex items-center justify-center rounded-full'
+              >
                 {icon}
               </li>
             );
