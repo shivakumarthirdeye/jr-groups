@@ -1,3 +1,4 @@
+import Hero from '@/components/Hero';
 import Layout from '@/components/Layout';
 
 export default function Home() {
@@ -7,9 +8,7 @@ export default function Home() {
       keywords={'This is a keywords'}
       title={'This is a title'}
     >
-      <div>
-        <h1 className='text-3xl font-bold underline'>Hello World</h1>
-      </div>
+      <Hero />
     </Layout>
   );
 }
