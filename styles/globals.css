@@ -63,3 +63,7 @@ button {
   content: '';
   @apply absolute top-0 bottom-0 w-full h-full bg-[#1f375fb2] pointer-events-none;
 }
+
+section {
+  @apply my-20;
+}
