@@ -63,7 +63,7 @@ const OurServices = () => {
           const { description, id, Svg, title, to } = item;
 
           return (
-            <div className='border border-[#163f7072] p-5'>
+            <div key={id} className='border border-[#163f7072] p-5'>
               <Svg />
 
               <h1 className='text-black text-2xl font-bold my-3'>{title}</h1>
