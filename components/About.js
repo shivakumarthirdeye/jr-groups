@@ -2,11 +2,11 @@ import img1 from '@/assets/images/about/1.png';
 import img2 from '@/assets/images/about/2.png';
 import img3 from '@/assets/images/about/3.webp';
 
-const About = () => {
+const About = ({ showBtn }) => {
   return (
     <div className='my-10'>
       <section className='container my-28'>
-        <div className='grid lg:grid-cols-2 lg:gap-5 items-center xl:gap-8'>
+        <div className='grid lg:grid-cols-2 gap-y-8 lg:gap-5 items-center xl:gap-8'>
           <div className='relative h-[556.07px]'>
             <div className='absolute top-0 right-0 xl:right-20 '>
               <svg
@@ -75,37 +75,30 @@ const About = () => {
               <div className='absolute bg-darkBlue rounded-full h-1.5 w-[60%]'></div>
             </div>
             <p className='text-grey leading-[34px] my-8'>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500, Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry. Lorem Ipsum has
-              been the industry's standard dummy text ever since the 1500
+              We offer a diverse range of fire detection systems, evacuation
+              systems, fire suppression systems, and maintenance services. JR
+              Group's services include fire safety, CCTV camera surveillance
+              solutions, access control systems, fire alarm systems, public
+              address systems and Intrusion Security Alarms. Modern technology,
+              worry-free security, and user-friendly integrations make everyday
+              solutions even simpler. Our staff is made up of knowledgeable and
+              motivated individuals that enjoy developing creative security
+              consulting solutions that free our clients from worrying about
+              their security. We can supply protection and routine maintenance
+              to all the commercial structures under our care with the help of
+              our strategies. Look for a fire detection solution that meets all
+              of your requirements.
             </p>
-            <div>
-              <button className='bg-primaryColor text-white max-w-[193px] w-full py-3 rounded-md'>
-                LEARN MORE
-              </button>
-            </div>
+            {showBtn && (
+              <div>
+                <button className='bg-primary text-white max-w-[193px] w-full py-3 rounded-md'>
+                  LEARN MORE
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </section>
-      <div className='bg-darkBlue py-16'>
-        <div className='text-white grid sm:grid-cols-3 max-w-[1350px] gap-5 mx-auto'>
-          <div className='text-center'>
-            <h2 className='text-[42px] font-bold'>18</h2>
-            <h3 className='font-bold'>Years of Work Experience</h3>
-          </div>
-          <div className='text-center'>
-            <h2 className='text-[42px] font-bold'>2</h2>
-            <h3 className='font-bold'>Years of Business Experience</h3>
-          </div>
-          <div className='text-center'>
-            <h2 className='text-[42px] font-bold'>520</h2>
-            <h3 className='font-bold'>Happy Clients</h3>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

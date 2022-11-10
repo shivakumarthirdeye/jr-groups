@@ -48,7 +48,7 @@ const Header = () => {
             return (
               <li
                 className={`${
-                  pathname === to ? 'text-primaryColor' : 'text-lightBlue'
+                  pathname === to ? 'text-primary' : 'text-lightBlue'
                 } font-medium`}
                 key={id}
               >

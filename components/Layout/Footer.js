@@ -6,6 +6,7 @@ import {
   FaPinterestP,
   FaTwitter,
 } from 'react-icons/fa';
+import Link from 'next/link';
 const ourServices = [
   {
     id: 1,
@@ -28,14 +29,17 @@ const usefulLinks = [
   {
     id: 1,
     title: 'About Us',
+    to: '/about-us',
   },
   {
     id: 2,
     title: 'Services',
+    to: '/services',
   },
   {
     id: 3,
     title: 'Contact us',
+    to: '/contact-us',
   },
 ];
 
@@ -103,14 +107,16 @@ const Footer = () => {
             <h1 className='text-4xl font-semibold'>Useful Links</h1>
             <ul className='my-5'>
               {usefulLinks.map(item => {
-                const { id, title } = item;
+                const { id, title, to } = item;
                 return (
                   <li
                     key={id}
-                    className='flex space-x-1 my-2.5 items-center text-sm tracking-wide text-opacity-70 leading-[22.4px]'
+                    className=' my-2.5  text-sm tracking-wide text-opacity-70 leading-[22.4px]'
                   >
-                    <HiOutlineChevronRight />
-                    <h4>{title}</h4>
+                    <Link className='flex space-x-1 items-center' href={to}>
+                      <HiOutlineChevronRight />
+                      <h4>{title}</h4>
+                    </Link>
                   </li>
                 );
               })}
@@ -129,7 +135,7 @@ const Footer = () => {
                   className='p-4 text-grey outline-none w-full  pr-8 rounded-md'
                   placeholder='Email address'
                 />
-                <button className='bg-primaryColor p-4 absolute top-0 max-w-[118px]  rounded-md w-full right-0'>
+                <button className='bg-primary p-4 absolute top-0 max-w-[118px]  rounded-md w-full right-0'>
                   Sign up
                 </button>
               </div>

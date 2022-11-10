@@ -1,7 +1,11 @@
 import About from '@/components/About';
+import Customers from '@/components/Customers';
 import Hero from '@/components/Hero';
 import Layout from '@/components/Layout';
+import OurProducts from '@/components/OurProducts';
 import OurServices from '@/components/OurServices';
+import Testimonials from '@/components/Testimonials';
+import Works from '@/components/Works';
 
 export default function Home() {
   return (
@@ -11,8 +15,12 @@ export default function Home() {
       title={'This is a title'}
     >
       <Hero />
-      <About />
+      <About showBtn={true} />
+      <Works />
       <OurServices />
+      <OurProducts />
+      <Customers />
+      <Testimonials />
     </Layout>
   );
 }

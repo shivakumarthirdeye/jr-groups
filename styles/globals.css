@@ -67,3 +67,13 @@ button {
 section {
   @apply my-20;
 }
+
+.ourWorkSwiper {
+  user-select: none;
+  overflow: visible !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: '' !important;
+}
