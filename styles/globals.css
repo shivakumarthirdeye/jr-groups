@@ -77,3 +77,13 @@ section {
 .swiper-button-prev:after {
   content: '' !important;
 }
+
+.clipPath1 {
+  clip-path: polygon(0 0, 100% 0, 92% 99%, 0 100%);
+}
+
+@media screen and (max-width: 768px) {
+  .clipPath1 {
+    clip-path: none;
+  }
+}

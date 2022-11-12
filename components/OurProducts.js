@@ -35,7 +35,7 @@ const products = [
 
 const OurProducts = () => {
   return (
-    <section className='bg-darkBlue py-20'>
+    <section id='products' className='bg-darkBlue py-20'>
       <div className='container'>
         <Title
           subheading='PORTFOLIO'

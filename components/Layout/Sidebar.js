@@ -1,10 +1,8 @@
 import logo from '@/assets/images/logo.png';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import Sidebar from './Sidebar';
-
+import { useEffect } from 'react';
+import { MdClose } from 'react-icons/md';
 const navLinks = [
   {
     id: 1,
@@ -34,27 +32,29 @@ const navLinks = [
   },
 ];
 
-const Header = () => {
+const Sidebar = ({ showSidebar, setShowSideBar }) => {
   const { pathname } = useRouter();
-  const [showSidebar, setShowSideBar] = useState(false);
+
   return (
-    <header className='container    h-[110px]'>
-      <div className='flex    items-center h-full lg:justify-between'>
-        <div className='md:hidden'>
+    <aside
+      className={`${
+        showSidebar ? 'translate-x-0 md:-translate-x-full' : '-translate-x-full'
+      } z-[100] fixed top-0 transition-all left-0 shadow-md w-[80vw] h-screen bg-white`}
+    >
+      <div className='p-5'>
+        <div className='flex justify-end '>
           <button
             onClick={() => {
               setShowSideBar(prev => !prev);
             }}
           >
-            <GiHamburgerMenu className='text-4xl' />
+            <MdClose className='text-4xl text-red-400' />
           </button>
         </div>
-        <div className='flex-1 flex justify-center  md:justify-start mx-auto'>
-          <Link href='/'>
-            <img src={logo.src} alt='' />
-          </Link>
+        <div className='flex justify-center my-5'>
+          <img src={logo.src} alt='' />
         </div>
-        <ul className='hidden md:flex space-x-5 xl:space-x-10'>
+        <ul className='mt-10'>
           {navLinks.map(item => {
             const { id, name, to } = item;
 
@@ -62,8 +62,11 @@ const Header = () => {
               <li
                 className={`${
                   pathname === to ? 'text-primary' : 'text-lightBlue'
-                } font-medium`}
+                } font-medium my-4 text-xl `}
                 key={id}
+                onClick={() => {
+                  setShowSideBar(prev => !prev);
+                }}
               >
                 <Link href={to}>{name}</Link>
               </li>
@@ -71,9 +74,8 @@ const Header = () => {
           })}
         </ul>
       </div>
-      <Sidebar showSidebar={showSidebar} setShowSideBar={setShowSideBar} />
-    </header>
+    </aside>
   );
 };
 
-export default Header;
+export default Sidebar;

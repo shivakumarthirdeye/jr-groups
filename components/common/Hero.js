@@ -10,8 +10,10 @@ const Hero = ({ heading, description }) => {
       }}
     >
       <div className='container text-center py-28 z-50 relative text-white'>
-        <h1 className='text-7xl mt-2 font-bold'>{heading}</h1>
-        <p className='my-8  leading-[36px]'>{description}</p>
+        <h1 className='text-5xl md:text-6xl lg:text-7xl mt-2 font-bold'>
+          {heading}
+        </h1>
+        <p className='my-8  md:leading-[36px]'>{description}</p>
       </div>
     </section>
   );

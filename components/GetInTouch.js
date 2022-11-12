@@ -1,7 +1,6 @@
-import profile from '@/assets/images/Profile.png';
+import profile from '@/assets/images/testimonial.png';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-console.log('🚀 ~ file: GetInTouch.js ~ line 2 ~ profile', profile);
 
 const GetInTouch = () => {
   const initialValues = {
@@ -21,18 +20,24 @@ const GetInTouch = () => {
   });
   return (
     <div className='bg-[#1F375F]  py-20'>
-      <div className='container mx-auto grid gap-10 items-center grid-cols-[auto_1fr]'>
-        <div className='max-w-[484px]  w-full h-full max-h-[484px] '>
-          <img src={profile.src} className=' w-full h-full rounded-lg' alt='' />
+      <div className='container mx-auto  lg:grid gap-10 justify-center items-center grid-cols-[auto_1fr]'>
+        <div className=' max-w-[484px] mx-auto  w-full h-full max-h-[484px] '>
+          <img
+            src={profile.src}
+            className='max-w-[484px] w-full h-full rounded-lg'
+            alt=''
+          />
         </div>
-        <div className='text-white'>
-          <h1 className='text-[42px] font-bold'>Get In Touch</h1>
+        <div className='mt-10 lg:mt-0'>
+          <h1 className='text-[42px] text-center lg:text-left text-white font-bold'>
+            Get In Touch
+          </h1>
           <Formik
             initialValues={initialValues}
             validationSchema={validationSchema}
             // onSubmit={onSubmit}
           >
-            <Form className='flex-1  max-w-[600px] my-10 flex flex-col gap-8'>
+            <Form className='flex-1 mx-auto lg:mx-0  max-w-[600px] my-10 flex flex-col gap-8'>
               <div className='w-full '>
                 <Field
                   type='text'

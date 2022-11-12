@@ -1,5 +1,6 @@
 import Hero from '@/components/common/Hero';
 import Layout from '@/components/Layout';
+import ServicesTab from '@/components/ServicesTab';
 import Testimonials from '@/components/Testimonials';
 import React from 'react';
 
@@ -15,6 +16,7 @@ const Services = () => {
           </>
         }
       />
+      <ServicesTab />
       <Testimonials />
     </Layout>
   );
