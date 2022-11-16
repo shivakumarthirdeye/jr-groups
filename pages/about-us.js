@@ -14,8 +14,9 @@ const AboutUs = () => {
         heading='About Us'
         description={
           <>
-            SECURITY SOLUTIONS FROM TRUSTED PROFESSIONALS <br /> OUR SECURITY
-            SERVICES ASSIST YOU IN CREATING SAFE AND SECURE AREAS.
+            SECURITY SOLUTIONS FROM TRUSTED PROFESSIONALS{' '}
+            <br className='hidden sm:block' /> OUR SECURITY SERVICES ASSIST YOU
+            IN CREATING SAFE AND SECURE AREAS.
           </>
         }
       />

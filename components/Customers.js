@@ -1,5 +1,5 @@
 import Title from './Title';
-import customer1 from '@/assets/images/customers/1.svg';
+import customer1 from '@/assets/images/customers/1.png';
 import customer2 from '@/assets/images/customers/2.svg';
 import customer3 from '@/assets/images/customers/3.png';
 import customer4 from '@/assets/images/customers/4.png';

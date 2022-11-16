@@ -13,7 +13,7 @@ const Works = () => {
           <h3 className='font-bold'>Years of Business Experience</h3>
         </div>
         <div className='text-center'>
-          <h2 className='text-[42px] font-bold'>520</h2>
+          <h2 className='text-[42px] font-bold'>50+</h2>
           <h3 className='font-bold'>Happy Clients</h3>
         </div>
       </div>

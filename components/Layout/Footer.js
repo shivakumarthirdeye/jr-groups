@@ -74,10 +74,10 @@ const footerIcons = [
 const Footer = () => {
   return (
     <footer className='bg-darkBlue pt-28 pb-10  text-white'>
-      <div className='container container-footer'>
-        <div className=' sm:grid  sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 '>
+      <div className='mx-auto px-4 container-footer'>
+        <div className=' sm:grid  sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-10 md:gap-8 '>
           <div>
-            <h1 className='text-4xl font-semibold'>About Us</h1>
+            <h1 className='text-xl sm:text-2xl font-semibold'>About Us</h1>
             <div className='my-5'>
               <p className='text-sm tracking-wide text-opacity-70 leading-[22.4px]'>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -87,24 +87,26 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h1 className='text-4xl font-semibold'>Our Services</h1>
+            <h1 className='text-xl sm:text-2xl font-semibold'>Our Services</h1>
             <ul className='my-5 '>
               {ourServices.map(item => {
                 const { id, title } = item;
                 return (
-                  <li
-                    key={id}
-                    className='flex space-x-1 my-2.5 items-center text-sm tracking-wide text-opacity-70 leading-[22.4px]'
-                  >
-                    <HiOutlineChevronRight />
-                    <h4>{title}</h4>
+                  <li key={id}>
+                    <Link
+                      href='/services'
+                      className='flex space-x-1 my-2.5 items-center text-sm tracking-wide text-opacity-70 leading-[22.4px]'
+                    >
+                      <HiOutlineChevronRight />
+                      <h4>{title}</h4>
+                    </Link>
                   </li>
                 );
               })}
             </ul>
           </div>
           <div>
-            <h1 className='text-4xl font-semibold'>Useful Links</h1>
+            <h1 className='text-xl sm:text-2xl font-semibold'>Useful Links</h1>
             <ul className='my-5'>
               {usefulLinks.map(item => {
                 const { id, title, to } = item;
@@ -123,7 +125,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className='sm:col-span-2 xl:col-span-1'>
-            <h1 className='text-4xl font-semibold'>Get In Touch</h1>
+            <h1 className='text-xl sm:text-2xl font-semibold'>Get In Touch</h1>
             <div className='my-5'>
               <p className='text-sm tracking-wide text-opacity-70 leading-[22.4px]'>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -148,7 +150,7 @@ const Footer = () => {
             return (
               <li
                 key={id}
-                className='text-xl p- h-8 w-8 bg-black bg-opacity-50 flex items-center justify-center rounded-full'
+                className='text-xl p-1.5 h-7 w-7  bg-black bg-opacity-50 flex items-center justify-center rounded-full'
               >
                 {icon}
               </li>
@@ -158,7 +160,7 @@ const Footer = () => {
         <div className='w-full  my-5 h-[1px] bg-white'></div>
         <div>
           <h3 className='text-center text-sm font-medium'>
-            © 2022. All rights reserved by Third Eye Innovations.
+            © 2022 JR Groups | All rights reserved
           </h3>
         </div>
       </div>

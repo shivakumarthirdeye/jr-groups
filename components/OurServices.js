@@ -50,7 +50,7 @@ const services = [
 const OurServices = () => {
   return (
     <section className='container'>
-      <Title heading={'Our Services'} subheading='WHAT WE DE' />
+      <Title heading={'Our Services'} subheading='WHAT WE DO' />
       <div className='grid sm:grid-cols-2 max-w-5xl my-10 mx-auto gap-5 lg:gap-10'>
         {services.map(item => {
           const { description, id, Svg, title, to } = item;

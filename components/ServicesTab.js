@@ -102,11 +102,6 @@ const tabContents = [
 const ServicesTab = () => {
   const [currentTab, setCurrentTab] = useState('fire safety');
 
-  console.log(
-    tabContents.filter(item => {
-      return item.key === currentTab;
-    })
-  );
   return (
     <section>
       <div className='container grid gap-4 gap-y-10 md:grid-cols-[350px_1fr] xl:grid-cols-[400px_1fr]'>

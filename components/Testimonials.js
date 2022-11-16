@@ -37,8 +37,8 @@ const Testimonials = () => {
         <div className='container  max-w-7xl'>
           <div className=' overflow-hidden'>
             <Title
-              subheading='PORTFOLIO'
-              heading='Our Products'
+              subheading='TESTIMONIALS'
+              heading='What Clients Say'
               headingColor='text-darkBlue'
               subColor='text-primary'
               borderBg='bg-darkBlue'
