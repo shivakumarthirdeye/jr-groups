@@ -3,7 +3,7 @@ import Background from '@/assets/images/hero.jpg';
 const Hero = ({ heading, description }) => {
   return (
     <section
-      className='bg-cover  my-0 hero-bg bg-center relative'
+      className='bg-cover  my-0 hero-bg bg-[80%] md:bg-center  relative'
       style={{
         height: '430px',
         backgroundImage: `url(${Background.src})`,

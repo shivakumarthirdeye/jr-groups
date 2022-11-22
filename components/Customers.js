@@ -32,7 +32,7 @@ const Customers = () => {
   return (
     <section className='container'>
       <Title heading={'Happy Customers'} subheading='Some of our valuable' />
-      <div className='my-28 lg:grid flex flex-wrap justify-center gap-20  lg:grid-cols-5 items-center'>
+      <div className='my-10 md:my-28 lg:grid flex flex-wrap justify-center gap-20  lg:grid-cols-5 items-center'>
         {customers.map(item => {
           const { id, img } = item;
           return <img src={img.src} className='w-[130px]' key={id} alt='' />;

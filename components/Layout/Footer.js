@@ -75,7 +75,7 @@ const Footer = () => {
   return (
     <footer className='bg-darkBlue pt-28 pb-10  text-white'>
       <div className='mx-auto px-4 container-footer'>
-        <div className=' sm:grid  sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-10 md:gap-8 '>
+        <div className=' sm:grid  sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-[1fr_1fr_1fr_1.2fr] gap-y-10 md:gap-8 '>
           <div>
             <h1 className='text-xl sm:text-2xl font-semibold'>About Us</h1>
             <div className='my-5'>
@@ -150,7 +150,7 @@ const Footer = () => {
             return (
               <li
                 key={id}
-                className='text-xl p-1.5 h-7 w-7  bg-black bg-opacity-50 flex items-center justify-center rounded-full'
+                className='text-xl p-1.5 md:h-7 md:w-7  bg-black bg-opacity-50 flex items-center justify-center rounded-full'
               >
                 {icon}
               </li>

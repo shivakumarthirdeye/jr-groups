@@ -25,7 +25,7 @@ const descriptions = [
 const Hero = () => {
   return (
     <section
-      className='bg-cover  my-0 hero-bg bg-center relative'
+      className='bg-cover  my-0 hero-bg bg-[80%] md:bg-center relative'
       style={{
         height: '618.2px',
         backgroundImage: `url(${Background.src})`,
@@ -49,9 +49,9 @@ const Hero = () => {
           // navigation={true}
           modules={[Navigation]}
         >
-          <div className='absolute bottom-[-200px] sm:bottom-[-225px] right-0 lg:right-20  z-10'>
+          <div className='absolute bottom-[-42vw] sm:bottom-[-225px] right-0 lg:right-20  z-10'>
             <div className=' flex gap-5'>
-              <button className='swiper-btn-prev-hero disabled:pointer-events-none disabled:opacity-60     cursor-pointer  bg-primary max-w-[66px] p-5 px-6  '>
+              <button className='swiper-btn-prev-hero disabled:pointer-events-none disabled:opacity-60     cursor-pointer  bg-primary h-14 md:h-auto max-w-[66px] p-2 px-5 md:p-5 md:px-6 '>
                 <svg
                   width='12'
                   height='21'
@@ -65,7 +65,7 @@ const Hero = () => {
                   />
                 </svg>
               </button>
-              <button className='swiper-btn-next-hero     disabled:pointer-events-none  disabled:opacity-60  cursor-pointer   bg-primary max-w-[66px] p-5 px-6  '>
+              <button className='swiper-btn-next-hero     disabled:pointer-events-none  disabled:opacity-60  cursor-pointer   bg-primary h-14 md:h-auto max-w-[66px] p-2 px-5 md:p-5 md:px-6  '>
                 <svg
                   width='13'
                   height='21'

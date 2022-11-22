@@ -57,7 +57,7 @@ const Testimonials = () => {
               >
                 <div className='absolute bottom-0 right-0 lg:right-20  z-10'>
                   <div className=' flex gap-5'>
-                    <button className='swiper-btn-prev disabled:pointer-events-none disabled:opacity-60     cursor-pointer  bg-primary max-w-[66px] p-5 px-6  '>
+                    <button className='swiper-btn-prev disabled:pointer-events-none disabled:opacity-60     cursor-pointer  bg-primary h-14 md:h-auto max-w-[66px] p-2 px-5 md:p-5 md:px-6  '>
                       <svg
                         width='12'
                         height='21'
@@ -71,7 +71,7 @@ const Testimonials = () => {
                         />
                       </svg>
                     </button>
-                    <button className='swiper-btn-next     disabled:pointer-events-none  disabled:opacity-60  cursor-pointer   bg-primary max-w-[66px] p-5 px-6  '>
+                    <button className='swiper-btn-next     disabled:pointer-events-none  disabled:opacity-60  cursor-pointer   bg-primary h-14 md:h-auto max-w-[66px] p-2 px-5 md:p-5 md:px-6 '>
                       <svg
                         width='13'
                         height='21'
